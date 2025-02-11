@@ -1,0 +1,19 @@
+<h2>Available Books</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Cover</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each books}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{price}}</td>
+            <td><img src="/images/{{coverImage}}" alt="{{title}} cover" width ="125"></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
